@@ -1,13 +1,39 @@
+'use client'
+import { useState } from "react"
+
 export default function NavBar() {
+    const [isNavOpen, setIsNavOpen] = useState(false)
+
+    const changeMenu = () => {
+        setIsNavOpen(!isNavOpen)
+    }
+
+
     return (
-        <nav className="flex justify-between mx-12 mt-3">
-            <p className="inline">Home</p>
-            <ul className="space-x-4">
-                <li className="inline">Videos</li>
-                <li className="inline">Book Me</li>
-                <li className="inline">About</li>
-                <li className="inline">Works</li>
-            </ul>
+        <>
+        <nav className="flex justify-between bg-white sticky top-0">
+            {/* logo */}
+            <div className="aspect-square w-20 m-2">
+                <a href="/"><img src="small-logo.png" alt="New World Aviation Logo" /></a>
+                
+            </div>
+            {/* company name */}
+            <div className="my-auto">NEWER WORLD AVIATION</div>
+            {/* hambuger menu */}
+            <div className="m-2 my-auto text-4xl cursor-pointer" onClick={changeMenu}>≡</div>
+            
         </nav>
+        {
+            isNavOpen ? 
+            <ul className="flex flex-col bg-white">
+                <li><a href="/about">About</a></li>
+                <li><a href="/videos">Videos</a></li>
+                <li><a href="/works">Works</a></li>
+                <li><a href="/book-me">Book Me</a></li>
+            </ul> 
+            :
+            <></>
+        }
+        </>
     )
 }
