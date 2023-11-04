@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <>
     <html lang="en" className={ptSerif.className}>
-      <body className="h-screen bg-slate-500">
+      <body className="h-screen bg-cyan-800">
         <NavBar />
         {children}
         </body>
