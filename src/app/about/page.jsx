@@ -1,8 +1,10 @@
+import Image from "next/image"
+
 export default function About() {
     return (
         <div className="flex flex-row">
             <div className="">
-                <img src="/small-logo.png" alt="Picture of Lantz Smith" />
+                <Image src="/small-logo.png" alt="Picture of Lantz Smith" width={400} height={600} />
             </div>
             <div>
                 <h3 className="text-xl">Lantz Smith</h3>
