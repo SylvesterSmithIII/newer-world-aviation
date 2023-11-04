@@ -14,7 +14,7 @@ export default function NavBar() {
         <nav className="flex justify-between bg-white sticky top-0">
             {/* logo */}
             <div className="aspect-square w-20 m-2">
-                <a href="/"><img src="small-logo.png" alt="New World Aviation Logo" /></a>
+                <a href="/"><img src="/small-logo.png" alt="New World Aviation Logo" /></a>
                 
             </div>
             {/* company name */}
