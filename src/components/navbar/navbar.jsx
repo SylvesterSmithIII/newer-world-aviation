@@ -13,12 +13,15 @@ export default function NavBar() {
         <>
         <nav className="flex justify-between bg-white sticky top-0">
             {/* logo */}
-            <div className="aspect-square w-20 m-2">
-                <a href="/"><img src="/small-logo.png" alt="New World Aviation Logo" /></a>
+            <div className="aspect-square w-20">
+                {/* <a href="/"><img src="/small-logo.png" alt="New World Aviation Logo" /></a> */}
                 
             </div>
+            <div className="aspect-square w-40 ">
+                <a href="/"><img src="/full-logo.png" alt="Newer World Aviation Logo" /></a>
+            </div>
             {/* company name */}
-            <div className="my-auto">NEWER WORLD AVIATION</div>
+            {/* <div className="my-auto text-2xl">NEWER WORLD AVIATION</div> */}
             {/* hambuger menu */}
             <div className="m-2 my-auto text-4xl cursor-pointer" onClick={changeMenu}>≡</div>
             
