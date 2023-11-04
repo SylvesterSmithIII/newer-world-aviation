@@ -1,5 +1,6 @@
 'use client'
 import { useState } from "react"
+import Image from "next/image"
 
 export default function NavBar() {
     const [isNavOpen, setIsNavOpen] = useState(false)
@@ -18,7 +19,7 @@ export default function NavBar() {
                 
             </div>
             <div className="aspect-square w-40 ">
-                <a href="/"><img src="/full-logo.png" alt="Newer World Aviation Logo" /></a>
+                <a href="/"><Image src="/full-logo.png" alt="Newer World Aviation Logo" width={160} height={160} /></a>
             </div>
             {/* company name */}
             {/* <div className="my-auto text-2xl">NEWER WORLD AVIATION</div> */}
