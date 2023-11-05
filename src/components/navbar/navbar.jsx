@@ -1,6 +1,4 @@
 'use client'
-
-
 import { useState } from "react";
 import Image from "next/image";
 import fullLogo from "/public/full-logo.PNG";
@@ -43,6 +41,9 @@ export default function NavBar() {
           isNavOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
+
+        <div className={`absolute my-16 -left-16 top-0 text-3xl cursor-pointer ease-in-out transition-transform duration-300 hover:text-slate-500  ${isNavOpen ? "" : "hidden"}`} onClick={() => setIsNavOpen(false)} >X</div>
+
         <Link href="/">
           <Image
             src={fullLogo}
@@ -54,17 +55,17 @@ export default function NavBar() {
           />
         </Link>
 
-        <ul className="flex flex-col flex-1 bg-white">
-          <li onClick={closeMenu}>
+        <ul className="flex flex-col bg-white text-3xl gap-8 text-center mt-10">
+          <li onClick={closeMenu} className="hover:text-slate-500">
             <Link href="/services">Services</Link>
           </li>
-          <li onClick={closeMenu}>
+          <li onClick={closeMenu} className="hover:text-slate-500">
             <Link href="/about">About</Link>
           </li>
-          <li onClick={closeMenu}>
+          <li onClick={closeMenu} className="hover:text-slate-500">
             <Link href="/works">Works</Link>
           </li>
-          <li onClick={closeMenu}>
+          <li onClick={closeMenu} className="hover:text-slate-500">
             <Link href="/book-me">Book Me</Link>
           </li>
         </ul>
