@@ -18,9 +18,9 @@
 
 .background-container {
   background-image: url('/puyallup.JPG'); /* Replace with the actual path to your image */
-  /* background-size: cover; 
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh; */
+  /* background-size: cover;  */
+  background-position: center bottom;
+  /* background-repeat: no-repeat; */
+  /* height: 100vh; */
 }
 
