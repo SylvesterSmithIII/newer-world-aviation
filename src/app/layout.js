@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={ptSerif.variable}>
-      <body className="h-screen bg-slate-500 font-ptSerif">
+      <body className="min-h-screen flex flex-col bg-slate-500 font-ptSerif">
         <NavBar />
         {children}
       </body>

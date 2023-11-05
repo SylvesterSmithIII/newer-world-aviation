@@ -12,7 +12,7 @@ export default function NavBar() {
     }
 
     return (
-        <nav className="h-1/6">
+        <nav className="">
             <div className="flex justify-center bg-white">
 
                 <div className="flex-1">
@@ -25,7 +25,9 @@ export default function NavBar() {
             
             {
                 isNavOpen ? 
-                <div className="absolute right-0 h-5/6 bg-white w-4/5 z-10 shadow-black shadow-xl">
+                <div className="fixed top-0 right-0 h-screen bg-white w-4/5 z-10 shadow-black shadow-xl">
+
+                    <Link href="/"><Image src={fullLogo} onClick={() => setIsNavOpen(false)} alt="Newer World Aviation Logo" width={160} height={160} className="mx-auto aspect-square" /></Link>
                 
                     <ul className="flex flex-col flex-1 bg-white">
                         <li onClick={changeMenu}><Link href="/services">Services</Link></li>
