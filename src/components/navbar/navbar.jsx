@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react"
 import Image from "next/image"
-import fullLogo from "/public/full-logo.png"
+import fullLogo from "/full-logo.png"
 
 export default function NavBar() {
     const [isNavOpen, setIsNavOpen] = useState(false)
