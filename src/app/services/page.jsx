@@ -1,4 +1,5 @@
 import Image from "next/image"
+import puyallup from '/public/puyallup.JPG'
 
 export default function Services() {
     return (
@@ -7,16 +8,16 @@ export default function Services() {
             <div>
                 <h2 className="m-4 text-xl">Arial Photogrophy</h2>
                 <div className="flex gap-4 m-4">
-                    <div><Image src="/puyallup.jpg" alt="" width={300} height={300}  /></div>
-                    <div><Image src="/puyallup.jpg" alt="" width={300} height={300} /></div>
+                    <div><Image src={puyallup} alt="" width={300} height={300}  /></div>
+                    <div><Image src={puyallup} alt="" width={300} height={300} /></div>
                 </div>
             </div>
 
             <div>
                 <h2 className="m-4 text-xl">Inspection</h2>
                 <div className="flex gap-4 m-4 ">
-                    <div><Image  src="/puyallup.jpg" alt="" width={300} height={300} /></div>
-                    <div><Image src="/puyallup.jpg" alt="" width={300} height={300} /></div>
+                    <div><Image  src={puyallup} alt="" width={300} height={300} /></div>
+                    <div><Image src={puyallup} alt="" width={300} height={300} /></div>
                 </div>
             </div>
 

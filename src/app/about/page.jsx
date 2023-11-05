@@ -1,10 +1,11 @@
 import Image from "next/image"
+import smallLogo from '/public/small-logo.PNG'
 
 export default function About() {
     return (
         <div className="flex flex-row">
             <div className="">
-                <Image src="/small-logo.png" alt="Picture of Lantz Smith" width={400} height={600} />
+                <Image src={smallLogo} alt="Picture of Lantz Smith" width={400} height={600} />
             </div>
             <div>
                 <h3 className="text-xl">Lantz Smith</h3>
