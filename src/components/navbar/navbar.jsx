@@ -1,48 +1,74 @@
 'use client'
-import { useState } from "react"
-import Image from "next/image"
-import fullLogo from "/public/full-logo.PNG"
-import Link from "next/link"
+
+
+import { useState } from "react";
+import Image from "next/image";
+import fullLogo from "/public/full-logo.PNG";
+import Link from "next/link";
 
 export default function NavBar() {
-    const [isNavOpen, setIsNavOpen] = useState(false)
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const changeMenu = () => {
-        setIsNavOpen(!isNavOpen)
-    }
+  const openMenu = () => {
+    setIsNavOpen(true);
+  };
 
-    return (
-        <nav className="">
-            <div className="flex justify-center bg-white">
+  const closeMenu = () => {
+    setIsNavOpen(false);
+  };
 
-                <div className="flex-1">
-                    <Link href="/"><Image src={fullLogo} onClick={() => setIsNavOpen(false)} alt="Newer World Aviation Logo" width={160} height={160} className="mx-auto aspect-square" /></Link>
-                </div>
+  return (
+    <nav className="">
+      <div className="flex justify-center bg-white">
+        <div className="flex-1">
+          <Link href="/">
+            <Image
+              src={fullLogo}
+              onClick={closeMenu}
+              alt="Newer World Aviation Logo"
+              width={160}
+              height={160}
+              className="mx-auto aspect-square cursor-pointer"
+            />
+          </Link>
+        </div>
 
-                <div className="text-4xl cursor-pointer absolute right-6 my-16" onClick={changeMenu}>≡</div>
+        <div className="text-4xl cursor-pointer absolute right-6 my-16" onClick={openMenu}>
+          ≡
+        </div>
+      </div>
 
-            </div>
-            
-            {
-                isNavOpen ? 
-                <div className="fixed top-0 right-0 h-screen bg-white w-4/5 z-10 shadow-black shadow-xl">
+      <div
+        className={`fixed top-0 right-0 h-screen bg-white w-4/5 z-10 shadow-black shadow-xl transform transition-transform ${
+          isNavOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <Link href="/">
+          <Image
+            src={fullLogo}
+            onClick={closeMenu}
+            alt="Newer World Aviation Logo"
+            width={160}
+            height={160}
+            className="mx-auto aspect-square cursor-pointer"
+          />
+        </Link>
 
-                    <Link href="/"><Image src={fullLogo} onClick={() => setIsNavOpen(false)} alt="Newer World Aviation Logo" width={160} height={160} className="mx-auto aspect-square" /></Link>
-                
-                    <ul className="flex flex-col flex-1 bg-white">
-                        <li onClick={changeMenu}><Link href="/services">Services</Link></li>
-                        <li onClick={changeMenu}><Link href="/about">About</Link></li>
-                        <li onClick={changeMenu}><Link href="/works">Works</Link></li>
-                        <li onClick={changeMenu}><Link href="/book-me">Book Me</Link></li>
-                    </ul> 
-
-                </div>
-                :
-                <></>
-                }
-
-            
-
-        </nav>
-    )
+        <ul className="flex flex-col flex-1 bg-white">
+          <li onClick={closeMenu}>
+            <Link href="/services">Services</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link href="/about">About</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link href="/works">Works</Link>
+          </li>
+          <li onClick={closeMenu}>
+            <Link href="/book-me">Book Me</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
