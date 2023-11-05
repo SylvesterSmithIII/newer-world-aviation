@@ -11,33 +11,29 @@ export default function NavBar() {
 
 
     return (
-        <>
-        <nav className="flex justify-between bg-white relative top-0">
-            {/* logo */}
-            <div className="aspect-square w-20">
-                {/* <a href="/"><img src="/small-logo.png" alt="New World Aviation Logo" /></a> */}
-                
+        <nav className="">
+            <div className="flex justify-center bg-white">
+
+                <div className="flex-1">
+                    <a href="/"><Image src="/full-logo.png" alt="Newer World Aviation Logo" width={160} height={160} className="mx-auto aspect-square" /></a>
+                </div>
+
+                <div className="text-4xl cursor-pointer absolute right-6 my-16" onClick={changeMenu}>≡</div>
+
             </div>
-            <div className="aspect-square w-40 ">
-                <a href="/"><Image src="/full-logo.png" alt="Newer World Aviation Logo" width={160} height={160} /></a>
-            </div>
-            {/* company name */}
-            {/* <div className="my-auto text-2xl">NEWER WORLD AVIATION</div> */}
-            {/* hambuger menu */}
-            <div className="m-2 my-auto text-4xl cursor-pointer" onClick={changeMenu}>≡</div>
             
+            {
+                isNavOpen ? 
+                <ul className="flex flex-col flex-1 bg-white">
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/works">Works</a></li>
+                    <li><a href="/book-me">Book Me</a></li>
+                </ul> 
+                :
+                <></>
+                }
+
         </nav>
-        {
-            isNavOpen ? 
-            <ul className="flex flex-col bg-white">
-                <li><a href="/services">Services</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/works">Works</a></li>
-                <li><a href="/book-me">Book Me</a></li>
-            </ul> 
-            :
-            <></>
-        }
-        </>
     )
 }
