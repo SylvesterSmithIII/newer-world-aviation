@@ -7,17 +7,17 @@ export default function Services() {
 
             <div>
                 <h2 className="m-4 text-xl">Arial Photogrophy</h2>
-                <div className="flex gap-4 m-4">
-                    <div><Image src={puyallup} alt="" width={300} height={300}  /></div>
-                    <div><Image src={puyallup} alt="" width={300} height={300} /></div>
+                <div className="flex flex-col md:flex-row gap-4 m-4 justify-around">
+                    <div className="mx-auto"><Image src={puyallup} alt="" width={600} height={600}  /></div>
+                    <div className="mx-auto"><Image src={puyallup} alt="" width={600} height={600} /></div>
                 </div>
             </div>
 
             <div>
                 <h2 className="m-4 text-xl">Inspection</h2>
-                <div className="flex gap-4 m-4 ">
-                    <div><Image  src={puyallup} alt="" width={300} height={300} /></div>
-                    <div><Image src={puyallup} alt="" width={300} height={300} /></div>
+                <div className="flex flex-col md:flex-row gap-4 m-4 justify-around">
+                    <div className="mx-auto"><Image  src={puyallup} alt="" width={600} height={600} /></div>
+                    <div className="mx-auto"><Image src={puyallup} alt="" width={600} height={600} /></div>
                 </div>
             </div>
 
