@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react"
 import Image from "next/image"
+import fullLogo from "../../../public/full-logo.png"
 
 export default function NavBar() {
     const [isNavOpen, setIsNavOpen] = useState(false)
@@ -15,7 +16,7 @@ export default function NavBar() {
             <div className="flex justify-center bg-white">
 
                 <div className="flex-1">
-                    <a href="/"><Image src="/full-logo.png" alt="Newer World Aviation Logo" width={160} height={160} className="mx-auto aspect-square" /></a>
+                    <a href="/"><Image src={fullLogo} alt="Newer World Aviation Logo" width={160} height={160} className="mx-auto aspect-square" /></a>
                 </div>
 
                 <div className="text-4xl cursor-pointer absolute right-6 my-16" onClick={changeMenu}>≡</div>
