@@ -16,6 +16,12 @@ module.exports = {
       },
       fontFamily: {
         'ptSerif': 'var(--ptSerif-font)'
+      },
+      backgroundColor: {
+        'main': '#e3e3e3',
+      },
+      spacing: {
+        'hambuger': '60px'
       }
     },
   },

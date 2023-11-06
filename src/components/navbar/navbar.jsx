@@ -18,20 +18,20 @@ export default function NavBar() {
   return (
     <nav className="">
       <div className="flex justify-center bg-white">
-        <div className="flex-1">
+        <div className="my-2">
           <Link href="/">
             <Image
               src={fullLogo}
               onClick={closeMenu}
               alt="Newer World Aviation Logo"
-              width={160}
-              height={160}
+              width={120}
+              height={120}
               className="mx-auto aspect-square cursor-pointer"
             />
           </Link>
         </div>
 
-        <div className="text-4xl cursor-pointer absolute right-6 my-16" onClick={openMenu}>
+        <div className="text-4xl cursor-pointer absolute right-6 my-hambuger" onClick={openMenu}>
           ≡
         </div>
       </div>
@@ -42,16 +42,16 @@ export default function NavBar() {
         }`}
       >
 
-        <div className={`absolute my-16 -left-16 top-0 text-3xl cursor-pointer ease-in-out transition-transform duration-300 hover:text-slate-500  ${isNavOpen ? "" : "hidden"}`} onClick={() => setIsNavOpen(false)} >X</div>
+        <div className={`absolute my-hambuger -left-16 top-0 text-3xl cursor-pointer ease-in-out transition-transform duration-300 hover:text-slate-500  ${isNavOpen ? "" : "hidden"}`} onClick={() => setIsNavOpen(false)} >X</div>
 
         <Link href="/">
           <Image
             src={fullLogo}
             onClick={closeMenu}
             alt="Newer World Aviation Logo"
-            width={160}
-            height={160}
-            className="mx-auto aspect-square cursor-pointer"
+            width={120}
+            height={120}
+            className="mx-auto my-2 aspect-square cursor-pointer"
           />
         </Link>
 
