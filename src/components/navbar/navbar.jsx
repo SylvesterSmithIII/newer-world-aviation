@@ -31,7 +31,7 @@ export default function NavBar() {
           </Link>
         </div>
 
-        <div className="text-4xl cursor-pointer absolute right-6 my-hambuger" onClick={openMenu}>
+        <div className="text-4xl cursor-pointer absolute right-6 my-hambuger hover:text-cyan-800" onClick={openMenu}>
           ≡
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function NavBar() {
         }`}
       >
 
-        <div className={`absolute my-hambuger -left-16 top-0 text-3xl cursor-pointer ease-in-out transition-transform duration-300 hover:text-slate-500  ${isNavOpen ? "" : "hidden"}`} onClick={() => setIsNavOpen(false)} >X</div>
+        <div className={`absolute my-hambuger -left-16 top-0 text-3xl cursor-pointer ease-in-out transition-transform duration-300 hover:text-cyan-800  ${isNavOpen ? "" : "hidden"}`} onClick={() => setIsNavOpen(false)} >X</div>
 
         <Link href="/">
           <Image
@@ -55,19 +55,21 @@ export default function NavBar() {
           />
         </Link>
 
-        <ul className="flex flex-col bg-white text-3xl gap-8 text-center mt-10">
-          <li onClick={closeMenu} className="hover:text-slate-500">
+        <ul className="flex h-full flex-col bg-white text-3xl gap-8 text-center mt-10">
+          <li onClick={closeMenu} className="hover:text-cyan-800">
             <Link href="/services">Services</Link>
           </li>
-          <li onClick={closeMenu} className="hover:text-slate-500">
+          <li onClick={closeMenu} className="hover:text-cyan-800">
             <Link href="/about">About</Link>
           </li>
-          <li onClick={closeMenu} className="hover:text-slate-500">
+          {/* <li onClick={closeMenu} className="hover:text-cyan-800">
             <Link href="/works">Works</Link>
           </li>
-          <li onClick={closeMenu} className="hover:text-slate-500">
+          <li onClick={closeMenu} className="hover:text-cyan-800">
             <Link href="/book-me">Book Me</Link>
-          </li>
+          </li> */}
+          {/* <li className="flex-1">s</li>
+          <li className="mt-auto">Login</li> */}
         </ul>
       </div>
     </nav>
