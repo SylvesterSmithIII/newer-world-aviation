@@ -16,7 +16,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="lg:hidden">
+    <nav className="">
       <div className="flex justify-center bg-white">
         <div className="my-2">
           <Link href="/">
@@ -69,9 +69,9 @@ export default function NavBar() {
             <Link href="/book-me">Book Me</Link>
           </li> */}
 
-            <li className="mt-auto mb-60 w-1/2 py-2 bg-cyan-800 rounded-full text-white hover:bg-opacity-75 hover:text-gray-800">
+            {/* <li className="mt-auto mb-60 w-1/2 py-2 bg-cyan-800 rounded-full text-white hover:bg-opacity-75 hover:text-gray-800">
                 <Link href="/login">Login</Link>
-            </li>
+            </li> */}
 
         </ul>
       </div>

@@ -20,7 +20,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className={ptSerif.variable}>
       <body className="min-h-screen flex flex-col font-ptSerif">
         <NavBar />
-        <FullNavBar />
         {children}
       </body>
     </html>
