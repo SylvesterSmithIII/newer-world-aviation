@@ -3,9 +3,9 @@ import smallLogo from '/public/small-logo.PNG'
 
 export default function About() {
     return (
-        <div className="flex flex-col md:flex-1 md:flex-row md:justify-evenly ">
-            <div className="lg:w-1/2">
-                <Image src={smallLogo} alt="Picture of Lantz Smith" className="mx-auto" width={450} height={450} />
+        <div className="flex flex-col md:flex-1 md:flex-row md:justify-evenly">
+            <div className="lg:w-1/2 overflow-hidden">
+                <Image src='/selfie.JPG' alt="Picture of Lantz Smith" className="mx-auto rounded-full" width={450} height={450} />
             </div>
             <div className="w-full md:w-1/2">
                 <h3 className="text-2xl text-cyan-800 text-center mt-6 mb-8 md:my-12 md:text-4xl">About Newer World Aviation</h3>

@@ -37,7 +37,7 @@ export default function NavBar() {
       </div>
 
       <div
-        className={`fixed top-0 right-0 h-screen bg-white w-4/5 z-10 shadow-black shadow-xl transform transition-transform ${
+        className={`fixed top-0 right-0 h-screen bg-white w-4/5 z-10 shadow-black ${isNavOpen ? 'shadow-xl' : ''} transform transition-transform ${
           isNavOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -61,6 +61,9 @@ export default function NavBar() {
           </li>
           <li onClick={closeMenu} className="hover:text-cyan-800">
             <Link href="/about">About</Link>
+          </li>
+          <li onClick={closeMenu} className="hover:text-cyan-800">
+            <Link href="/fleet">Fleet</Link>
           </li>
           {/* <li onClick={closeMenu} className="hover:text-cyan-800">
             <Link href="/works">Works</Link>
