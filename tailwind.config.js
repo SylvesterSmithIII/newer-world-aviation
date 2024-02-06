@@ -20,6 +20,9 @@ module.exports = {
       backgroundColor: {
         'main': '#e3e3e3',
       },
+      colors: {
+        'main': '#e3e3e3',
+      },
       spacing: {
         'hambuger': '60px'
       }

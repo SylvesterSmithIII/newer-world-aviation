@@ -16,7 +16,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="">
+    <nav className="lg:hidden">
       <div className="flex justify-center bg-white">
         <div className="my-2">
           <Link href="/">
@@ -55,7 +55,7 @@ export default function NavBar() {
           />
         </Link>
 
-        <ul className="flex h-full flex-col bg-white text-3xl gap-8 text-center mt-10">
+        <ul className="flex h-full flex-col bg-white text-3xl gap-8 text-center items-center mt-10">
           <li onClick={closeMenu} className="hover:text-cyan-800">
             <Link href="/services">Services</Link>
           </li>
@@ -68,8 +68,11 @@ export default function NavBar() {
           <li onClick={closeMenu} className="hover:text-cyan-800">
             <Link href="/book-me">Book Me</Link>
           </li> */}
-          {/* <li className="flex-1">s</li>
-          <li className="mt-auto">Login</li> */}
+
+            <li className="mt-auto mb-60 w-1/2 py-2 bg-cyan-800 rounded-full text-white hover:bg-opacity-75 hover:text-gray-800">
+                <Link href="/login">Login</Link>
+            </li>
+
         </ul>
       </div>
     </nav>
