@@ -17,7 +17,7 @@ export default function Fleet() {
                     </ul>
                 </div>
                 
-                <div className="flex-1"><Image src={Drone1} width={400} height={500}></Image></div>
+                <div className="flex-1"><Image alt="" src={Drone1} width={400} height={500}></Image></div>
                 
                 <div className="w-[400px] text-center flex flex-col justify-between h-[200px] px-12 flex-1">
                     
@@ -38,7 +38,7 @@ export default function Fleet() {
                     </ul>
                 </div>
                 
-                <div><Image src={Drone2} width={400} height={500}></Image></div>
+                <div><Image alt="" src={Drone2} width={400} height={500}></Image></div>
                 
                 <div className="w-[400px] text-center flex flex-col justify-between h-[200px] px-12 flex-1">
                     
@@ -59,7 +59,7 @@ export default function Fleet() {
                     </ul>
                 </div>
                 
-                <div><Image src={Drone3} width={400} height={500}></Image></div>
+                <div><Image alt="" src={Drone3} width={400} height={500}></Image></div>
                 
                 <div className="w-[400px] text-center flex flex-col justify-between h-[200px] px-12 flex-1">
                     
