@@ -34,7 +34,6 @@ export default function Fleet() {
                     <ul className="my-auto">
                         <li>Mechanical Shutter</li>
                         <li>20MP 1" CMOS Sensor</li>
-                       
                     </ul>
                 </div>
                 
