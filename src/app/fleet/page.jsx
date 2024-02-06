@@ -33,7 +33,7 @@ export default function Fleet() {
             <h1 className="text-2xl">DJI P4 ADV</h1>
                     <ul className="my-auto">
                         <li>Mechanical Shutter</li>
-                        <li>20MP 1" CMOS Sensor</li>
+                        <li>20MP 1&ldquo; CMOS Sensor</li>
                     </ul>
                 </div>
                 
