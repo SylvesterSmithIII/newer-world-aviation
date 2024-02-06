@@ -7,12 +7,12 @@ export default function Services() {
 
             <div>
                 
-                <div className="flex flex-col-reverse md:flex-row gap-4 m-4 justify-around ">
+                <div className="flex flex-col-reverse md:flex-row gap-4 m-4 justify-around mt-8 md:mt-4">
                     
                     <div className="mx-auto "><Image src={puyallup} alt="" width={600} height={452} className="border-black border-4 rounded-[10px]" /></div>
                     <div className="mx-auto max-w-[600px] max-h-[452px]  text-xl flex flex-col justify-center  ">
                         <h2 className="mb-auto text-center text-cyan-800 text-2xl md:text-4xl border-black  border-b-4 pb-2 ">Arial Photography</h2>
-                        <p className="md:mb-20 p-4 md:p-0">Are you looking for a unique and captivating way to capture breathtaking aerial imagery? Look no further than our professional drone photography services. We combine cutting-edge drone technology with skilled pilots and photographers to deliver stunning visuals that will leave a lasting impression. Unlock the unlimited potential of aerial photography with our professional drone services. Elevate your visual storytelling and make a lasting impact with stunning aerial imagery. Contact us today to discuss your project and let us bring your vision to new heights!</p>
+                        <p className="md:mb-20 mb-4 p-4 md:p-0">Are you looking for a unique and captivating way to capture breathtaking aerial imagery? Look no further than our professional drone photography services. We combine cutting-edge drone technology with skilled pilots and photographers to deliver stunning visuals that will leave a lasting impression. Unlock the unlimited potential of aerial photography with our professional drone services. Elevate your visual storytelling and make a lasting impact with stunning aerial imagery. Contact us today to discuss your project and let us bring your vision to new heights!</p>
                     </div>
                 </div>
             </div>
