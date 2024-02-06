@@ -1,5 +1,7 @@
 import Image from "next/image"
 import puyallup from '/public/puyallup.JPG'
+import inspection from '/public/inspection.JPG'
+import search from '/public/search.jpeg'
 
 export default function Services() {
     return (
@@ -24,7 +26,7 @@ export default function Services() {
                         <h2 className="mb-auto text-center text-cyan-800 text-2xl md:text-4xl border-black  border-b-4 pb-2 ">Inspections</h2>
                         <p className="md:mb-20 p-4 md:p-0">Are you tired of costly and time-consuming manual inspections that put your personnel at risk? Step into the future of industrial inspections with our cutting-edge drone technology. Our drone inspection solutions offer a game-changing approach to assessing assets, infrastructure, and facilities with unparalleled efficiency and safety.</p>
                     </div>
-                    <div className="mx-auto"><Image  src={puyallup} alt="" width={600} height={600} className="border-black border-4 rounded-[10px]"  /></div>
+                    <div className="mx-auto"><Image  src={inspection} alt="" width={600} height={600} className="border-black border-4 rounded-[10px]"  /></div>
                     
                 </div>
             </div>
@@ -35,7 +37,7 @@ export default function Services() {
                 
                 <div className="flex flex-col-reverse md:flex-row gap-4 m-4 justify-around">
                     
-                    <div className="mx-auto "><Image src={puyallup} alt="" width={600} height={452} className="border-black border-4 rounded-[10px]" /></div>
+                    <div className="mx-auto "><Image src={search} alt="" width={600} height={452} className="border-black border-4 rounded-[10px]" /></div>
                     <div className="mx-auto max-w-[600px] max-h-[452px]  text-xl flex flex-col justify-center  ">
                         <h2 className="mb-auto text-center text-cyan-800 text-2xl md:text-4xl border-black  border-b-4 pb-2 ">Search and Rescue</h2>
                         <p className="md:mb-20 p-4 md:p-0">When it comes to <span className="text-red-600 font-bold">critical search and rescue</span>  missions, <span className="text-red-600 font-bold">every second counts! </span>
