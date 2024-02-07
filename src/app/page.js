@@ -2,14 +2,14 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="flex-1 flex flex-col my-8 mx-2 md:mx-16">         
+    <main className="flex-1 flex flex-col my-8 mx-6 md:mx-16">         
       <div className="flex-1 mx-auto max-w-[900px]">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="aspect-auto border-black border-4 mt-8"
+          className="aspect-auto rounded-2xl  mt-8"
         >
           <source src="/fujw2816.MP4" type="video/mp4" />
           Your browser does not support the video tag.

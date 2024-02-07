@@ -2,12 +2,9 @@ import { PT_Serif } from "next/font/google"
 import './globals.css'
 import NavBar from '@/components/navbar/navbar'
 import FullNavBar from "@/components/navbar/fullnavbar"
+import Background from "@/components/background"
 
-const ptSerif = PT_Serif({
-   subsets: ['latin'],
-   weight: "400",
-   variable: "--ptSerif-font"
-  })
+
 
 
 export const metadata = {
@@ -17,9 +14,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={ptSerif.variable}>
-      <body className="min-h-screen flex flex-col font-ptSerif">
+    <html lang="en">
+      <body className="min-h-screen flex flex-col font-sans relative m-0 p-0 box-border">
         <NavBar />
+        {/* <Background /> */}
         {children}
       </body>
     </html>
